@@ -11,6 +11,9 @@
 # and installs in the directory lib/orocos/acc/
 #
 orocos_component(acc_main acc_main.hpp acc_main.cpp) # ...you may add multiple source files
+orocos_component(acc_udp acc_udp.hpp acc_udp.cpp)
+orocos_component(acc_st acc_st.hpp acc_st.cpp)
+orocos_component(acc_cg acc_cg.hpp acc_cg.cpp)
 #
 # You may add multiple orocos_component statements.
 
@@ -19,7 +22,7 @@ orocos_component(acc_main acc_main.hpp acc_main.cpp) # ...you may add multiple s
 #
 # Installs in the include/orocos/acc/ directory
 #
-orocos_install_headers(acc-component.hpp) # ...you may add multiple header files
+orocos_install_headers(acc_main.hpp acc_udp.hpp acc_st.hpp acc_cg.hpp) # ...you may add multiple header files
 #
 # You may add multiple orocos_install_headers statements.
 
